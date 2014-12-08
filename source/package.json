@@ -1,0 +1,15 @@
+{
+  "name": "Asimov01",
+  "version": "0.0.10",
+  "description": "Asimov01",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acevedodamian/Asimov01"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

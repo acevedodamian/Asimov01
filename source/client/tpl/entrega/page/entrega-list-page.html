@@ -1,0 +1,20 @@
+<div id="header"></div>
+
+<div id="content" data-role="content" data-iscroll>
+    <div class="ui-field-contain ui-field-buscador">
+        <input id="key-entrega-search" name="key-entrega-search"
+             type="search" class="search-query" placeholder="Buscar por patente" />
+        <a id="button-search"  data-role="button">Buscar</a>
+    </div>
+
+    <br/>
+    <ul data-role="listview" data-inset="true" id='entregaList'>
+
+    </ul>
+
+    <% if (!entregasDisponibles) { %>
+        <p class="ui-sin-entregas">No hay entregas en transito</p>
+    <% }%>
+</div>
+
+<div id="footer"></div>

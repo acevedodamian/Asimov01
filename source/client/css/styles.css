@@ -1,0 +1,448 @@
+.action-list {
+    clear: both;
+}
+
+.ui-content{
+
+   background-color: #f9f9f9 !important;
+
+}
+body {
+    overflow-y: hidden;
+
+}
+html, body {
+    width:100%;
+    height:100%;
+}
+
+.ui-page {
+    padding-bottom: 0px;
+}
+.ui-nopadding {
+    padding: 0 0 !important;
+}
+
+/*
+    Header
+*/
+
+.ui-header{
+    height: 46px;
+}
+
+.ui-header-title {
+    font-weight: bolder;
+    font-size: 110% !important;
+    white-space: initial !important;
+}
+
+.ui-header-logo {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    //right: 0;
+    margin: auto;
+}
+/*
+    SCROLLBARS
+*/
+
+::-webkit-scrollbar:vertical {
+    width: 16px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 16px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+::
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+/*::-webkit-scrollbar-button {
+    background-color: #74747b;
+}
+::-moz-scrollbar-button {
+    background-color: #74747b;
+}*/
+
+/*
+    RECEPCION DE MERCADERIA
+*/
+
+td {
+    padding-right: 10px !important;
+}
+.ui-texto-alineado {
+    white-space: initial !important;
+    font-weight: bold !important;
+}
+
+.ui-texto-alineado-White-space{
+ white-space: initial !important;
+}
+
+.ui-center-text {
+    text-align: center;
+}
+
+/*
+    ESTILO DE MENU
+*/
+
+.ui-text-user-name {
+    font-weight: bold;
+    margin: -4px 0 5px 0;
+    font-size: large;
+}
+.ui-text-user-email {
+    font-size: small;
+}
+.ui-text-user-destacamento {
+    font-size: medium;
+    font-weight: 600;
+}
+.ui-text-user-destacamento-get {
+    font-size: smaller;
+}
+
+/*
+    FIRMA
+*/
+
+.ui-firme-aqui{
+}
+
+#signature-container{
+    text-align: center;
+}
+
+.signature {
+    border: 1px solid;
+    border-color: #C5C5C5;
+    cursor: crosshair !important;
+}
+
+.ui-popup-screen {
+    height: 100% !important;
+}
+
+/* Collapsible list */
+
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-bottom-width: 0;
+}
+.estado-rechazado.ui-collapsible-heading > .ui-btn {
+    border-top-width: 0;
+}
+
+.ui-collapsible-notitle .ui-collapsible-heading-toggle{
+    height: 45px;
+}
+
+/* Estado collapsible list */
+
+.ui-li-static.ui-collapsible > .estado-rechazado.ui-collapsible-heading > .ui-btn {
+    background: rgb(248, 203, 185) !important;
+}
+.ui-li-static.ui-collapsible > .estado-recibido.ui-collapsible-heading > .ui-btn {
+    background: rgb(213, 253, 213) !important;
+}
+
+/*
+    Estados de validacion de entrega
+    El estado ciclico del boton es: ninguno -> rechazado -> recibido -> faltante
+*/
+
+.estado-recibido {
+    background: rgb(213, 253, 213) !important;
+}
+.estado-faltante {
+    background: rgb(248, 248, 171) !important;
+}
+.estado-rechazado {
+    background: rgb(248, 203, 185) !important;
+}
+
+.animacion-rechazado{
+    -webkit-animation: animacion-rechazado 1s;
+}
+
+.animacion-recibido{
+    -webkit-animation: animacion-recibido 1s;
+}
+
+.animacion-faltante{
+    -webkit-animation: animacion-faltante 1s;
+}
+
+@-webkit-keyframes animacion-recibido {
+    0%   {background: rgba(255, 255, 255, 0.0);}
+    100% {background: rgba(213, 253, 213, 1);}
+}
+
+@-webkit-keyframes animacion-faltante {
+    0%   {background: rgba(255, 255, 255, 0.0);}
+    100% {background: rgba(248, 248, 171, 1);}
+}
+
+@-webkit-keyframes animacion-rechazado {
+    0%   {background: rgba(255, 255, 255, 0.0);}
+    100% {background: rgba(248, 203, 185, 1);}
+}
+
+.animarTest{
+    -webkit-animation: testGlow 10s;
+}
+
+.ui-celda-remito-item{
+    margin: 2px !important;
+}
+
+.ui-field-contain {
+    border-bottom-width: 0px !important;
+    padding-bottom: 0em !important;
+}
+
+/* Dialogos y botones con corners cuadradas! */
+
+.ui-btn-corner-all,
+.ui-btn.ui-corner-all,
+.ui-slider-track.ui-corner-all,
+.ui-flipswitch.ui-corner-all,
+.ui-li-count {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.ui-corner-all {
+    -webkit-border-radius: 0em;
+    border-radius: 0em;
+}
+.ui-popup {
+    padding: 3px;
+}
+.notifier.notifier-theme-dialog.notifier-pos-center .notifier-inner {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+.notifier.notifier-theme-dialog button {
+    -webkit-border-top-right-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    -moz-border-radius-topleft: 0px !important;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+.logo-garbarino-header {
+    position: absolute;
+    margin-left: 2px;
+}
+/*
+    ICONOS DE LAS VALIDACIONES INPUT
+*/
+
+.ui-icono-validacion-mal.ui-btn-icon-left:after,
+.ui-icono-validacion-mal.ui-btn-icon-right:after,
+.ui-icono-validacion-mal.ui-btn-icon-top:after,
+.ui-icono-validacion-mal.ui-btn-icon-bottom:after,
+.ui-icono-validacion-mal.ui-btn-icon-notext:after {
+    background-color: rgba(220, 0, 0, 1) !important;
+}
+.ui-icono-validacion-bien.ui-btn-icon-left:after,
+.ui-icono-validacion-bien.ui-btn-icon-right:after,
+.ui-icono-validacion-bien.ui-btn-icon-top:after,
+.ui-icono-validacion-bien.ui-btn-icon-bottom:after,
+.ui-icono-validacion-bien.ui-btn-icon-notext:after {
+    background-color: rgb(24, 195, 4) !important;
+}
+.ui-validacion-input-text {
+    float: left !important;
+    width: 100% !important;
+}
+.ui-validacion-input-text-icono {
+    position: absolute !important;
+    top: 4px;
+    right: 3px;
+}
+.ui-validacion-input-text-icono .ui-btn {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+/*
+Estilo del pop up ayuda
+*/
+
+.ui-main-popup {
+    height: 132px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.ui-boton-popup {
+    text-align: center;
+    width: 191px;
+    height: 45px;
+    font-size: smaller;
+}
+.ui-div-img-popup {
+    float: left;
+    margin-right: 5px;
+}
+.ui-img-popup {
+    width: auto;
+    height: 102px;
+}
+.ui-div-table-popup {
+    float: right;
+}
+.ui-table-popup {
+    margin-top: -5px;
+}
+
+/*
+
+    ESTILO DEL POP-UP TERMINOS Y CONDICIONES
+    LLEVA EL MISMO ID QUE EL DIV + "-popup"
+*/
+
+
+/*
+#terminosCondicionesPopUp-popup{
+    z-index: 2;
+
+}
+*/
+
+.ui-text-terminos-condiciones{
+
+font-family: -webkit-body;
+    font-size: medium;
+
+}
+
+/*
+    ESTILO DIV DE FIRMA ACEPTACION
+*/
+/*.div-termino .ui-btn {
+    font-size: small;
+}*/
+
+.ui-main-firma{
+    width: 500px !important;
+    height: 300px !important;
+}
+
+/*
+    POPUP AYUDA
+*/
+
+.ui-button-mesa-ayuda{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.ui-display-table{
+    display: table;
+}
+
+/*
+    BARRA DE BUSQUEDA MAS BOTON BUSCAR
+*/
+
+
+.ui-barra-busqueda{
+    margin-right: 76px !important;
+}
+
+
+.ui-barra-boton{
+    width: 80px !important;
+    float: right !important;
+    margin-top: -48px !important;
+    font-size: small !important;
+}
+
+/*
+    ISCROLL
+*/
+
+.iscroll-scroller{
+    width: 100%;
+}
+
+/*
+    ENTREGAS
+*/
+
+.ui-sin-entregas{
+    text-align: center;
+    font-size: x-large;
+    padding-top: 40px;
+    color: rgb(211, 211, 211);
+}
+
+.deshabilitado{
+    background: rgba(0,0,0,0.04) !important;
+}
+
+/*
+    PAGINA ADMIN
+*/
+
+.ui-localstorage-popup{
+    overflow: auto;
+    font-size: 130%
+}
+
+/*
+    BUSCADOR
+*/
+
+.ui-field-buscador{
+    margin: auto;
+    width: 90%;
+}
+
+/*
+    boton cerrar
+*/
+
+.popupCloseTerminos{
+    width: 100%;
+}
+
+/*
+    VARIOS, MISC.
+*/
+
+.ui-version-app{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: rgb(209, 209, 209);
+    margin-right: 13px;
+}

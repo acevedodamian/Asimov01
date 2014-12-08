@@ -1,0 +1,67 @@
+<div data-role="footer" data-position="fixed" data-theme="b"
+     data-tap-toggle="false" data-transition="none" data-id="footer">
+    <nav data-role="navbar">
+        <ul>
+            <% if (botonVolver){ %>
+                <li>
+                    <a id="botonVolver" class="back" data-icon="back" data-rel="back">Volver</a>
+                </li>
+            <% } %>
+
+            <% if (botonInicio){ %>
+                <li>
+                    <input
+                        id="botonInicio" type="button" value="Inicio"
+                        data-rel="home" class="home ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                        data-icon="home" data-iconpos="top" />
+                </li>
+            <% } %>
+
+            <li>
+                <input
+                    id="info-button" type="button" value="Ayuda"
+                    data-rel="popup" class="info ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                    data-transition="pop" data-iconpos="top" data-position-to="window"
+                    data-icon="info" />
+            </li>
+
+            <% if (botonContinuar){ %>
+                <li>
+                    <a id="continuar-button" data-icon="forward">Continuar</a>
+                </li>
+            <% } %>
+
+            <% if (botonFinalizar){ %>
+                <li>
+                    <a id="finalizar-button" data-icon="check" data-transition="flip">Finalizar</a>
+                </li>
+            <% } %>
+        </ul>
+    </nav>
+</div>
+
+
+<div id="info" data-role="popup" data-theme="b">
+    <div data-role="header">
+        <h1>Ayuda al Usuario</h1>
+    </div>
+    <div data-role="main" class="ui-content ui-main-popup" >
+        <div class="ui-div-img-popup">
+            <img class="ui-img-popup" src="img/contacto.png" />
+        </div>
+        <div class="ui-div-table-popup">
+            <table class="ui-table-popup">
+                <tr>
+
+                    <td> <a href="tel:01147887155" class="ui-texto-alineado ui-boton-popup" data-role="button" data-icon="phone" data-iconpos="left">Llamar Centro de soporte técnico</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="ui-display-table"> <a href="tel:01147887155" data-role="button" class="ui-texto-alineado ui-boton-popup ui-button-mesa-ayuda" data-icon="phone" data-iconpos="left">Llamar Mesa de ayuda</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+# 1. Install all dependencies defined in package.json
+ 
+npm install
+
+# 2. Install all dependencies defined in bower.json
+
+bower install
+
+# 8. Optimizing the Application with r.js
+
+node r.js -o client/js/build.js
+
+# Add plugin
+bower install --save backbone-validation
+
+
+-----------------
+MOCK REST SERVICE
+-----------------
+
+http://cloud1.retcon.com.ar:4321/api/usersAuth
+
+ssh retcon@devVM1
+welcome1
+cd /home/retcon/SVN_GDelivery/trunk/Mockups/mock_rest
+
+

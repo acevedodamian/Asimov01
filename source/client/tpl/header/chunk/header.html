@@ -1,0 +1,85 @@
+<div data-role="header" data-position="fixed" data-theme="b"
+     data-tap-toggle="false" data-transition="none" data-id="header">
+	<img class="ui-header-logo" src="img/logo_asimov01.png"/>
+    <h1 class="ui-header-title"><%= titulo %></h1>
+    <% if ( botonMenu ) {%>
+        <a id="bars-button" data-role="button" class="ui-btn-right"
+           data-icon="bars" href="#menuPanel" data-mini="true" data-inline="true">
+            Menu
+        </a>
+    <%}%>
+</div>
+
+<div
+   data-position-fixed="true" data-role="panel" id="menuPanel"
+   data-theme="a" data-display="overlay" data-position="right">
+
+    <div data-role="controlgroup" data-corners="false">
+        <% if (usuario) { %>
+            <span class="ui-text-user-name">
+                <%= usuario.get('usuario') %>
+            </span>
+            <br/>
+            <span class="ui-text-user-email">
+                <%= usuario.get('email') %>
+            </span>
+            <br/><HR style="margin-bottom: 5px;"/>
+            <span class="ui-text-user-destacamento">
+                Destacamento
+            </span>
+            <br/>
+            <span class="ui-text-user-destacamento-get">
+                <%= usuario.get('destacamento').destacamento %>
+            </span>
+            <br/><br/>
+            <span class="ui-texto-alineado" style="color:#36c;">
+                Ultima sincronización: <%= fechaUltimaSincronizacion %>
+            </span>
+            <br/>
+            <a id="logout-button" style="margin-left: 1px; margin-top: 6px;"
+               data-role="button" data-icon="user" data-iconpos="left">
+               Cerrar sesión
+            </a>
+        <% } else { %>
+            <a
+                href="#login" style=" margin-left: 1px; margin-top: 6px;"
+                data-role="button" data-icon="user" data-iconpos="left">
+
+                Login
+            </a>
+        <% } %>
+
+        <a
+            style="margin-left: 1px;" id="dataSyncButton"  data-role="button"
+            data-icon="recycle" data-iconpos="left">
+
+            Sincronizar Datos
+        </a>
+        <a
+            style="margin-left: 1px;" id="checkUpdates" data-role="button" data-icon="cloud"
+            data-iconpos="left" class="ui-texto-alineado-White-space">
+            Actualizar app
+        </a>
+
+        <% if (isAdmin) { %>
+            <HR style="margin-bottom: 5px;"/>
+            Opciones administrativas:
+            <div id="opcionesAdmin">
+
+                <a style="width: 100%;" href="#configuracion" data-role="button"
+                    data-mini="true">Configuracion</a>
+
+                <a style="width: 100%;" href="#almacenamientoLocal" data-role="button"
+                    data-mini="true">Almacenamiento local</a>
+
+                <a style="width: 100%;" id="clearLocalStorage" data-role="button"
+                    data-mini="true">Borrar almacenamiento local</a>
+            </div>
+        <% }%>
+
+        <div>
+            <p class="ui-version-app">version <%= version %></p>
+        </div>
+
+    </div>
+</div>

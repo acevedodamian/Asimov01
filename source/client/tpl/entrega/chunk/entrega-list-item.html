@@ -1,0 +1,22 @@
+<a href='#entregas/<%= id %>/remitos' style="text-align: center;">
+	<span class="ui-li-count" style="margin-top: -0.90em; float: right;position: initial;" data-theme="a">
+        <%= remitos.length %>
+    </span>
+	<h2>
+        <%= patente %>
+    </h2>
+	<h3>
+        <span class="ui-texto-alineado"><%= chofer %></span> - <span class="ui-texto-alineado"><%= transportista %></span>
+    </h3>
+    <h4>
+        <p class="ui-texto-alineado"><%= empresa.empresa %> - <%= depOrigen %> -
+
+        <%
+            fecha = new Date(fechaHoja);
+            var fechaFormateada = fecha.toLocaleDateString();
+
+        %>
+        <%= fechaFormateada %> </p>
+    </h4>
+</a>
+

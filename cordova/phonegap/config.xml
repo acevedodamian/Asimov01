@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.asimov01" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Asimov01</name>
+    <description>
+        Asimov01 FPV Control
+    </description>
+    <author email="acevedodamian@gmail.com" href="https://github.com/acevedodamian/Asimov01">
+        Damian Acevedo Arg. 2014
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <!-- The image to display as the splash screen -->
+    <preference name="SplashScreen" value="screen" />
+    <!-- The default delay of how long the splashscreen appears in milliseconds.
+    	 This should be the worst-case expected start time
+     -->
+    <preference name="SplashScreenDelay" value="3000" />
+
+<preference name="AndroidPersistentFileLocation" value="Internal" />
+
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+
+	<feature name="FileTransfer">
+	<param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+	</feature>
+
+    <plugin name="Device" value="org.apache.cordova.Device" />
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
+
+<plugin name="WebIntent" value="com.borismus.webintent.WebIntent" />
+
+</widget>

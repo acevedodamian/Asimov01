@@ -1,0 +1,29 @@
+<div id="header"></div>
+
+<div data-role="content" data-iscroll>
+	<ul data-role="listview" data-inset="true" >
+		<li>
+			<a data-role="button" class="estado-recibido">
+				<center>
+					<h1>Total de artículos recibidos: <%= cantidadRecibidos %></h1>
+				</center>
+			</a>
+		</li>
+		<li>
+			<a data-role="button" class="estado-rechazado">
+				<center>
+					<h1>Total de artículos rechazados: <%= cantidadRechazados %> </h1>
+				</center>
+			</a>
+		</li>
+		<li>
+			<a data-role="button" class="estado-faltante">
+				<center>
+					<h1>Total de artículos faltantes: <%= cantidadFaltantes %> </h1>
+				</center>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div id="footer"></div>
