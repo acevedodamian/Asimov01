@@ -4,9 +4,7 @@ Asimov01
 Javascript software to control a Raspberry Pi based FPV remote controlled robot car
 
 [![license](http://img.shields.io/badge/license-Apache-blue.svg?style=flat)](https://raw.githubusercontent.com/acevedodamian/Asimov01/master/LICENSE)
-[![npm](http://img.shields.io/npm/v/Asimov01.svg?style=flat)](https://www.npmjs.org/package/Asimov01)
 [![downloads](http://img.shields.io/npm/dm/Asimov01.svg?style=flat)](https://www.npmjs.org/package/Asimov01)
-
 [![build](http://img.shields.io/travis/acevedodamian/Asimov01/master.svg?style=flat)](https://travis-ci.org/acevedodamian/Asimov01)
 [![coverage](http://img.shields.io/coveralls/acevedodamian/Asimov01/master.svg?style=flat)](https://coveralls.io/r/acevedodamian/Asimov01)
 [![code climate](http://img.shields.io/codeclimate/github/acevedodamian/Asimov01.svg?style=flat)](https://codeclimate.com/github/acevedodamian/Asimov01)
@@ -42,19 +40,19 @@ go to your host url, ie:  http://asimov01:5000
 Credits:
 ========
 thanks a lot to people in this great projects:
-    Software PWM libraries 
-        https://github.com/sarfata/pi-blaster
-        https://github.com/richardghirst/PiBits/tree/master/ServoBlaster
-    NPM Module to access Pwm libraries: 
-        https://github.com/acevedodamian/pi-blaster.js
-    GPIO and SR04 sensor library 
-        https://github.com/clebert/r-pi-usonic
-        https://github.com/clebert/r-pi-gpio
-    Web Sockets implementation for server communication 
-        http://socket.io/
-    Retcon development team 
-        http://www.retcon.com.ar 
-        https://www.facebook.com/retconlabs
+Software PWM libraries 
+    https://github.com/sarfata/pi-blaster
+    https://github.com/richardghirst/PiBits/tree/master/ServoBlaster
+NPM Module to access Pwm libraries: 
+    https://github.com/acevedodamian/pi-blaster.js
+GPIO and SR04 sensor library 
+    https://github.com/clebert/r-pi-usonic
+    https://github.com/clebert/r-pi-gpio
+Web Sockets implementation for server communication 
+    http://socket.io/
+Retcon development team 
+    http://www.retcon.com.ar 
+    https://www.facebook.com/retconlabs
     
 License:
 ========
