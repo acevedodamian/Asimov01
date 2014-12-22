@@ -1,4 +1,4 @@
-#var socket = io.connect('http://localhost:5000');
+//var socket = io.connect('http://localhost:5000');
 var socket = io.connect('http://asimov01.retcon.com.ar:5000');
 
 socket.on('asimovCommandRes', function (data) {
@@ -45,9 +45,9 @@ $(document).ready(function() {
            term.echo('');
         }
     }, {
-        greetings: 'Javascript Interpreter',
+        greetings: 'Asimov01 Javascript Interpreter',
         name: 'js_demo',
         height: 200,
-        prompt: 'js> '});
+        prompt: 'Asimov01 js> '});
     });
 });

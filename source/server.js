@@ -5,8 +5,11 @@ var app = require('http').createServer(handler)
   , util = require('util')
   , commProc = require('./server/commandProcessor.js')
   , piblaster = require('pi-blaster.js')
-//  , servoblaster = require('servo-blaster.js')   //TODO:como hacer esta lib ?
-  , usonic = require('r-pi-usonic')
+//  , servoblaster = require('servo-blaster.js')   //TODO: hacer esta lib copiando pi-blaster
+//  , readline   = require('readline')
+//  , statistics = require('math-statistics')
+//  , pigpio = require('r-pi-gpio')
+//  , usonic = require('r-pi-usonic')
 ;
 
 app.listen(5000);
