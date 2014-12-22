@@ -1,5 +1,12 @@
 Servidor
 
+------------------------------
+
+Estoy en :
+
+error de permisos de NPM ! al incluir libs de sensor y gpio 
+en:  node server.js
+
 
 
 ----------------------------------
@@ -9,3 +16,9 @@ Notas Servos:
 Rango de los servos de 50 a 120 ? ?
 echo 2=50 > /dev/servoblaster  
 ( 2 es el GPIO 18 )
+
+
+------------
+consola JS:
+
+socket.emit('asimovCommandReq', { evalJS: piServoBlaster.setServoPwm(2,50) });

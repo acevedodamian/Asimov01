@@ -40,16 +40,21 @@ go to your host url, ie:  http://asimov01:5000
 Credits:
 ========
 thanks a lot to people in this great projects:
+
 Software PWM libraries 
     https://github.com/sarfata/pi-blaster
     https://github.com/richardghirst/PiBits/tree/master/ServoBlaster
+    
 NPM Module to access Pwm libraries: 
     https://github.com/acevedodamian/pi-blaster.js
+    
 GPIO and SR04 sensor library 
     https://github.com/clebert/r-pi-usonic
     https://github.com/clebert/r-pi-gpio
+    
 Web Sockets implementation for server communication 
     http://socket.io/
+    
 Retcon development team 
     http://www.retcon.com.ar 
     https://www.facebook.com/retconlabs

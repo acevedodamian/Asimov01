@@ -1,3 +1,5 @@
+var piServoBlaster = require('pi-servo-blaster.js')
+
 /*
 commandProcessor.js
 Server commands parser implementation
