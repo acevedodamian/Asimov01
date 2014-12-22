@@ -1,4 +1,6 @@
 var piServoBlaster = require('pi-servo-blaster.js')
+  , util = require('util')
+;
 
 /*
 commandProcessor.js
