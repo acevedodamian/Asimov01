@@ -1,0 +1,48 @@
+<div id="header"></div>
+
+<div data-role="content" data-theme="a" data-iscroll>
+    <div class="ui-field-contain">
+        <label for="URL_HOST">URL HOST:</label>
+        <input type="text" name="URL_HOST"
+            id="URL_HOST" value="<%= APP.config.URL_HOST %>" />
+
+    </div>
+    <div class="ui-field-contain">
+        <label for="URL_REST_SVC_BASE">URL REST SVC BASE:</label>
+        <input type="text" name="URL_REST_SVC_BASE"
+            id="URL_REST_SVC_BASE" value="<%= APP.config.URL_REST_SVC_BASE %>" />
+    </div>
+    <div class="ui-field-contain">
+        <label for="URL_SERVICIO_CONTRASENA">URL SERVICIO CONTRASENA:</label>
+        <input type="text" name="URL_SERVICIO_CONTRASENA"
+            id="URL_SERVICIO_CONTRASENA" value="<%= APP.config.URL_SERVICIO_CONTRASENA %>" />
+    </div>
+
+    <div class="fieldcontain">
+        <label for="DOWNLOAD_STORAGE_FOLDER">STORAGE FOLDER:</label>
+        <input type="text" name="DOWNLOAD_STORAGE_FOLDER"
+            id="DOWNLOAD_STORAGE_FOLDER" value="<%= APP.config.DOWNLOAD_STORAGE_FOLDER %>" />
+    </div>
+
+    <div class="ui-field-contain">
+        <label for="AJAX_TIMEOUT">AJAX TIMEOUT:</label>
+        <input type="text" name="AJAX_TIMEOUT"
+            id="AJAX_TIMEOUT" value="<%= APP.config.AJAX_TIMEOUT %>" />
+    </div>
+
+    <div class="ui-field-contain">
+        <label for="ADMINS">ADMINS:</label>
+        <input type="text" name="ADMINS"
+            id="ADMINS" value="<%= APP.config.ADMINS %>" />
+    </div>
+
+    <div class="ui-field-contain">
+        <label for="INTENTOS_TARJETA">INTENTOS TARJETA:</label>
+        <input type="text" name="INTENTOS_TARJETA"
+            id="INTENTOS_TARJETA" value="<%= APP.config.INTENTOS_TARJETA %>" />
+    </div>
+
+    <!--<a id="fillLocalStorage" data-role="button">Llenar el local storage (cuidado)</a>-->
+</div>
+
+<div id="footer"></div>

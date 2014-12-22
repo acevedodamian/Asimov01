@@ -12,9 +12,18 @@ cd /Asimov01/source
 
 npm install pi-blaster.js
 
+npm install wiring-pi
+
 npm install socket.io
 
 node server.js
 
 go to your host url, ie:  http://asimov01:5000
+
+
+Credits:
+========
+Server using:
+
+https://github.com/eugeneware/wiring-pi
 
